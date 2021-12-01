@@ -16,6 +16,9 @@ header {
   background-color: #333;
   padding: 0.5em 0.5em;
 }
+header h1{
+  font-size: 2.7em;
+}
 
 .number {
   display: inline;
@@ -23,7 +26,7 @@ header {
 
 #rows {
   background-color: #444;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
   width: 50%;
   margin: auto;
@@ -32,10 +35,12 @@ header {
 
 #rows h2 {
   margin: 5px;
-  font-family: 200%;
+  margin-bottom: 0.5em; 
+  font-size: 2.5em;
   text-transform: uppercase;
 }
 #rows input {
+  font-size: 1em;
   border-radius: 0; 
   display: block;
   margin: auto;
@@ -48,11 +53,10 @@ header {
   margin-top: 10px;
   border-radius: 0;
   padding: 0.5em 1em;  
-  background-color: #222;
   color: #fff;
   border: 1px solid #333;
   width: 225px;;
-  font-size: 105%; 
+  font-size: 1em; 
   display: block;
 }
 #numbers {
@@ -81,4 +85,12 @@ header {
 
 #message {
   display: block;
+}
+
+#submit {
+  background-color: green;
+}
+
+#clear {
+  background-color: red;
 }
