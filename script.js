@@ -88,5 +88,15 @@ document.querySelector('#clear').addEventListener('click', (e) => {
   document.querySelector('#row1').value = ''
   document.querySelector('#row2').value = ''
   document.querySelector('#row3').value = ''
+
+  document.querySelector('#message').textContent = ''
+
+  document.querySelector('#num1').textContent = '0'
+  document.querySelector('#num2').textContent = '0'
+  document.querySelector('#num3').textContent = '0'
+
+  document.querySelector('#num1').style.color = '#fff'
+  document.querySelector('#num2').style.color = '#fff'
+  document.querySelector('#num3').style.color = '#fff'
 })
 
