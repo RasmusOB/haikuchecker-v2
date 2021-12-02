@@ -100,3 +100,34 @@ document.querySelector('#clear').addEventListener('click', (e) => {
   document.querySelector('#num3').style.color = '#fff'
 })
 
+document.querySelector('#saveBtn').addEventListener('click', (e)=> {
+
+  e.preventDefault()
+
+  const saves = document.querySelector('#saves')
+
+  const div = document.createElement('div')
+  const row1p = document.createElement('p')
+  const row2p = document.createElement('p')
+  const row3p = document.createElement('p')
+
+  const row1 = document.querySelector('#row1').value
+  const row2 = document.querySelector('#row2').value
+  const row3 = document.querySelector('#row3').value
+
+  row1p.textContent = row1
+  row2p.textContent = row2
+  row3p.textContent = row3
+  
+  div.setAttribute('class', 'save')
+
+  div.appendChild(row1p)
+  div.appendChild(row2p)
+  div.appendChild(row3p)
+
+  saves.appendChild(div)
+
+  document.body.appendChild(saves)
+
+})
+

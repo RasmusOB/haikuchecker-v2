@@ -89,8 +89,18 @@ header h1{
   cursor: pointer;
 }
 
+#saveBtn {
+  background-color: blue;
+}
+
+.save {
+  background-color: #333;
+  padding: 0.5em;
+  margin: 0.5em;
+  margin-top: 1em; 
+}
+
 #numbers {
-  position: absolute;
   bottom: 10px;
   text-align: center;
   background-color: #444;
@@ -100,7 +110,7 @@ header h1{
   margin-right: auto;
   left: 0;
   right: 0;
-  width: fit-content;
+  width: 50%;
   animation: slideUp 0.5s 1;
 }
 
@@ -123,4 +133,13 @@ header h1{
 
 #clear {
   background-color: red;
+}
+
+#saves {
+  background-color: #444;
+  text-align: center;
+  padding: 10px;
+  width: 50%; 
+  margin: auto;
+  font-size: 110%;
 }
