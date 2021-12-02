@@ -100,11 +100,15 @@ document.querySelector('#clear').addEventListener('click', (e) => {
   document.querySelector('#num3').style.color = '#fff'
 })
 
+document.querySelector('#saves').style.display = 'none'
+
 document.querySelector('#saveBtn').addEventListener('click', (e)=> {
 
   e.preventDefault()
 
   const saves = document.querySelector('#saves')
+
+  saves.style.display = 'block'
 
   const div = document.createElement('div')
   const row1p = document.createElement('p')
