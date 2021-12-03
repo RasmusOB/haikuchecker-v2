@@ -144,3 +144,30 @@ header h1{
   margin: auto;
   font-size: 110%;
 }
+
+@media only screen and (max-width: 600px) {
+
+
+  #rows {
+    width: 75%;
+  }
+
+  #rows input {
+    width: 175px;
+  }
+
+  #rows button {
+    width: 200px;
+  }
+
+  #format {
+    font-size: 130%;
+  }
+
+  #numbers {
+    width: 90%;
+  }
+  #saves {
+    width: 90%;
+  }
+}

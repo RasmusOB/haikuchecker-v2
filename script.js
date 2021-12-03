@@ -108,30 +108,41 @@ document.querySelector('#saveBtn').addEventListener('click', (e)=> {
 
   const saves = document.querySelector('#saves')
 
-  saves.style.display = 'block'
-
-  const div = document.createElement('div')
-  const row1p = document.createElement('p')
-  const row2p = document.createElement('p')
-  const row3p = document.createElement('p')
-
   const row1 = document.querySelector('#row1').value
   const row2 = document.querySelector('#row2').value
   const row3 = document.querySelector('#row3').value
 
-  row1p.textContent = row1
-  row2p.textContent = row2
-  row3p.textContent = row3
   
-  div.setAttribute('class', 'save')
 
-  div.appendChild(row1p)
-  div.appendChild(row2p)
-  div.appendChild(row3p)
+  if (row1.replace(/\s/g, '').length && row2.replace(/\s/g, '').length && row3.replace(/\s/g, '').length) {
 
-  saves.appendChild(div)
+    const row1p = document.createElement('p')
+    const row2p = document.createElement('p')
+    const row3p = document.createElement('p')
+   
+    saves.style.display = 'block'
 
-  document.body.appendChild(saves)
+    const div = document.createElement('div')
+
+
+    div.appendChild(row1p)
+    div.appendChild(row2p)
+    div.appendChild(row3p)
+
+    row1p.textContent = row1
+    row2p.textContent = row2
+    row3p.textContent = row3
+  
+    div.setAttribute('class', 'save')
+
+    saves.appendChild(div)
+
+    document.body.appendChild(saves)
+
+} else {
+  alert('Please enter every row of your haiku!')
+  console.log('Seriously?\nAre trying to break my program?!\nYou think i\'am stupid? Hell nah I did a a fail safe that you will never crack hahhahahha!\nTry ME!')
+}
 
 })
 
