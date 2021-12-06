@@ -139,8 +139,18 @@ document.querySelector('#saveBtn').addEventListener('click', (e)=> {
 
     document.body.appendChild(saves)
 
+    const messageDiv = document.querySelector('#message-rows')
+
+    messageDiv.textContent = '*Saved successfully'
+    messageDiv.style.color = 'green'
+
 } else {
-  alert('Please enter every row of your haiku!')
+  
+  const messageDiv = document.querySelector('#message-rows')
+
+  messageDiv.textContent = '*Fill in every row'
+  messageDiv.style.color = 'red'
+
   console.log('Seriously?\nAre trying to break my program?!\nYou think i\'am stupid? Hell nah I did a a fail safe that you will never crack hahhahahha!\nTry ME!')
 }
 

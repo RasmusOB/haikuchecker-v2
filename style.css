@@ -15,9 +15,17 @@ header {
   text-align: center;
   background-color: #333;
   padding: 0.5em 0.5em;
+  margin: auto;
 }
 header h1{
   font-size: 2.7em;
+}
+
+#message-rows {
+  text-transform: uppercase;
+  margin: 1em; 
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .number {
