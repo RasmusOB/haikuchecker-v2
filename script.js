@@ -98,6 +98,10 @@ document.querySelector('#clear').addEventListener('click', (e) => {
   document.querySelector('#num1').style.color = '#fff'
   document.querySelector('#num2').style.color = '#fff'
   document.querySelector('#num3').style.color = '#fff'
+
+  const messageDiv = document.querySelector('#message-rows')
+
+  messageDiv.textContent = ''
 })
 
 document.querySelector('#saves').style.display = 'none'
